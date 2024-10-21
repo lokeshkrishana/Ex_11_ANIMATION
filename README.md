@@ -22,8 +22,8 @@ Android Studio(Latest Version)
 ```
 /*
 Program to display animation operation”.
-Developed by: GEORGE PAUL TONY.C
-Registeration Number : 212222040043
+Developed by: Lokesh K
+Registeration Number : 212222040087
 */
 ```
 
