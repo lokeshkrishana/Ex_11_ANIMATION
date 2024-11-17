@@ -11,13 +11,11 @@ Android Studio(Latest Version)
 5.Link buttons to their respective animation methods using the onClick attribute.
 6.Run the app to verify the animations.
 ## PROGRAM:
-```
-/*
+```/*
 Program to display animation operation”.
 Developed by: Lokesh K
 Registeration Number : 212222040087
-*/
-```
+*/```
 ## OUTPUT
 ## In activity_main.xml
 ```
