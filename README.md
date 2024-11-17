@@ -1,8 +1,11 @@
 # Ex.No: 11 Develop a application to add animations to ImageView,Move,blink,fade,clockwise,zoom,slide operations are perform in android studio.
+
+
 ## AIM:
 To develop a application to add animation to imageview,move,blink,fade,clockwise,zoom,slide operation using Android Studio.
 ## EQUIPMENTS REQUIRED:
 Android Studio(Latest Version)
+
 ## ALGORITHM:
 1.Start a new Android project in Android Studio.
 2.Create UI elements (TextView, ImageView, Buttons) in activity_main.xml.
@@ -11,11 +14,11 @@ Android Studio(Latest Version)
 5.Link buttons to their respective animation methods using the onClick attribute.
 6.Run the app to verify the animations.
 ## PROGRAM:
-```/*
+```
 Program to display animation operation”.
-Developed by: Lokesh K
+Developed by: Lokesh  k
 Registeration Number : 212222040087
-*/```
+```
 ## OUTPUT
 ## In activity_main.xml
 ```
@@ -77,7 +80,7 @@ Registeration Number : 212222040087
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:onClick="fade"/>
-    <Button
+<Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="blink"
@@ -127,13 +130,14 @@ public class MainActivity extends AppCompatActivity {
         Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(),
                 R.anim.clockwise);
         image.startAnimation(animation1);
-    }
+    
     public void fade(View view){
         ImageView image = (ImageView)findViewById(R.id.imageView);
         Animation animation1 =
                 AnimationUtils.loadAnimation(getApplicationContext(),
                         R.anim.fade);
-        image.startAnimation(animation1);}
+        image.startAnimation(animation1);
+    }
     public void blink(View view){
         ImageView image = (ImageView)findViewById(R.id.imageView);
         Animation animation1 =
@@ -165,7 +169,6 @@ public class MainActivity extends AppCompatActivity {
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
-
     <rotate xmlns:android="http://schemas.android.com/apk/res/android"
         android:fromDegrees="0"
         android:toDegrees="360"
@@ -182,7 +185,6 @@ public class MainActivity extends AppCompatActivity {
         android:duration="5000" >
     </rotate>
 </set>
-
 ```
 ## Fade.xml
 ```
@@ -244,6 +246,7 @@ public class MainActivity extends AppCompatActivity {
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillAfter="true" >
+
     <scale
         android:duration="500"
         android:fromXScale="1.0"
@@ -254,7 +257,6 @@ public class MainActivity extends AppCompatActivity {
 </set>
 ```
 ## OUTPUT:
-
 ![image](https://github.com/user-attachments/assets/f4c8388b-e014-4551-a193-efa2e65a9a31)
 
 ![image](https://github.com/user-attachments/assets/70f445fb-e42b-4db1-a4c2-c3f54b67017f)
